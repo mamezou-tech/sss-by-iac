@@ -1,0 +1,29 @@
+# .tfvarsファイルテンプレート
+#
+# このファイルは.tfvarsファイルのテンプレートです。
+# ファイル名を terrafrom.tfvars に変更し、以下の変数の"TODO"に自分の環境の値を設定してください。
+# 項目については豆蔵デベロッパーサイトの記事の「外部入力」の節を参照ください。
+#
+# コメントアウトされている変数はデフォルトがあるので未設定でも問題ありません。
+# （設定されているのはデフォルト値と同じです）
+#
+vpc_id = "TODO"
+default_security_group_id = "TODO"
+allow_origins=["TODO"]
+# cors_max_age = 80000
+# log_retention_in_days=7
+cognito_user_pool_endpoint = "TODO"
+user_pool_client_ids = ["TODO"]
+
+ecs_task = {
+    # memory = 512
+    # cpu = 256
+}
+ecs_service = {
+    # desired_count = 1
+    # http_methods = ["GET"]
+}
+
+private_subnet_ids = [
+    "TODO",
+]
